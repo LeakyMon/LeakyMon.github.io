@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaky's HQ</title>
+    <link rel="stylesheet" href="headers.css">
+    <link rel="stylesheet" href="classes.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+ <header>
+    <a href="#home"> Hector's Portfolio </a>
+ </header>
+ <div class="navbar">
+     <ul id="Menu">
+         <li> <a class="p" href="#home"> Home </a></li>
+         <li> <a class="p" href="#projects"> Projects </a></li>
+         <li> <a  class="p" href="#resume"> Resume </a></li>
+         <li style="float:right"> <a class="p" href="#contact"> Contact </a></li>
+         <script>
+             // Add active class to the current button (highlight it)
+             var header = document.getElementById("Menu");
+             var btns = header.getElementsByClassName("p");
+             for (var i = 0; i < btns.length; i++) {
+                 btns[i].addEventListener("click", function() {
+                     var current = document.getElementsByClassName("active");
+              if (current.length > 0) { 
+                current[0].className = current[0].className.replace(" active", "");
+              }
+              this.className += " active";
+              });
+            }
+        </script>
+    </ul>
+</div>  
+
+    <!-- HOME PAGE -->
+
+    <section class="welcome">      
+        Welcome
+        <h3>
+            <span>I am a 3rd year student at the University</span>of Florida majoring in Computer Science.         
+        </h3>
+        <div>
+            Here are my socials:
+            <div>
+                <a href="https://www.linkedin.com/in/hmonforte/">
+                    <img class="logo" src="linkedIN.png">
+                </a>
+                <a href="https://github.com/LeakyMon">
+                    <img class="logo" src="GitHub-Mark.png" >
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----- PROJECTS ----- -->
+    
+    <section id="projects" class="projects">
+        <div class="projects">Projects</div>     <br>
+      <div id = "block">
+        <a href="https://github.com/LeakyMon/AVLTree" class="card">
+            <figure class="image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+                </svg>
+        
+            </figure>
+            <article class="text">
+                <h2>AVL Tree</h2>
+                <p><span>Custom AVL Tree with</span><span>insertion, traversals, and removals</span></p>
+            </article>
+           
+        </a>
+      
+       
+        </div>
+        
+    <div id="block">
+        <a href="https://github.com/LeakyMon/BionicReading" class="card">
+            <figure class="image">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+            </svg>
+            </figure>
+            <article class="text">
+                <h2>Bionic Reading</h2>
+                <p><span>Program using c++ to</span>bold letters in text.</p>
+            </article>
+        </a>
+    </div>
+
+
+    <div id="block">
+        <a href="https://github.com/LeakyMon/ImageProcessing" class="card">
+            <figure class="image">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+            </svg>
+            </figure>
+            <article class="text">
+                <h2>Image Processing</h2>
+                <p><span>Program to read binary files</span>and manipulate images</p>
+            </article>
+        </a>
+    </div>
+
+    <div id="block">
+        <a href="https://github.com/LeakyMon/LinkedList" class="card">
+            <figure class="image">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+            </svg>
+            </figure>
+            <article class="text">
+                <h2>Linked List</h2>
+                <p><span>Doubly linked list with</span>all basic functions</p>
+            </article>
+        </a>
+    </div>
+    <div id="block">
+        <a href="https://github.com/LeakyMon/Portfolio" class="card">
+            <figure class="image">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+            </svg>
+            </figure>
+            <article class="text">
+                <h2>Web Portfolio</h2>
+                <p><span>HTML, CSS, Javascript</span>webpage portfolio</p>
+            </article>
+        </a>
+    </div>
+    <div id="block">
+        <a href="https://github.com/LeakyMon/BionicReading" class="card">
+            <figure class="image">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <circle cx="50" cy="50" r="50" fill="#fccb5b"/>
+            </svg>
+            </figure>
+            <article class="text">
+                <h2>Angular Web App</h2>
+                <p><span>Program using c++ to</span>bold letters in text.</p>
+            </article>
+        </a>
+    </div>
+
+    </section>
+
+ <!-- ----- RESUME ----- -->
+
+    <section id="resume" class="resume">
+
+        Resume
+     
+<br>
+<br>
+
+<iframe src="Resume (1).pdf" width="75%", height="800px"></iframe>
+<!-- -----
+
+        <div id="box">
+            <div class="vertical">Welcome to <strong>The Box!</strong></div>
+           
+          </div>
+          <div id="box">
+            <div class="right">Welcome to <strong>The Box 2!</strong></div>
+           
+          </div>
+          ----- -->
+      
+    </section>
+
+ <!-- ----- CONTACT ----- -->
+
+    <section id="contact" class="contact">
+
+        Contact Info
+
+    </section>
+
+</body>
+</html>
