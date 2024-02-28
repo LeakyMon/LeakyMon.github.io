@@ -17,11 +17,13 @@ header {
     color: #595959;
   }
   h3{
+   
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
 	  color: grey;
 	  margin: 0;
-    padding: 150px;
+    padding: 50px;
+    padding-bottom: 320px;
   }
   div {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

@@ -6,6 +6,48 @@
     margin-top: 50px;
     width: 100px;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul.left {
+    flex: 1;
+}
+.navbar ul.right{
+  flex:1;
+  justify-content: right;
+  color:lightskyblue;
+}
+
+.navbar ul.center {
+    flex: 2;
+    justify-content: center; /* Center the middle section */
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+}
+.navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white; /* Ensure this matches your desired text color */
+    /* Add any other styles you want to apply universally */
+}
+
   .welcome{
     padding-top: 50px;
     text-align: center;
@@ -68,11 +110,7 @@
     font: 32px "Arial";
     
   }
-  .right {
-    color: blue;
-    font: 32px "Arial";
-    
-  }
+
   
   .extra {
     width: 350px;
@@ -106,6 +144,26 @@
           transform: translateY(4px);
       }
     
+
+.viewmore {
+  display: inline-block;
+    width: 10rem;
+    height: 4rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    transition: all 0.3s;
+    
+}
+  .viewmore:hover {
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,.14),0 7px 5px -2px rgba(0,0,0,.2),0 5px 9px 0 rgba(0,0,0,.12);
+  top: -4px;
+  transform: translateY(-4px);
+    }
+
   .image {  
     background-color: #ce8098;
     height: 11rem;

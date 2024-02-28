@@ -11,36 +11,41 @@
 </head>
 
 <body>
- <header>
-    <a href="#index"> Hector's Portfolio </a>
- </header>
- <div class="navbar">
-     <ul id="Menu">
-         <li> <a class="p" href="#index"> Home </a></li>
-         <li> <a class="p" href="#projects"> Projects </a></li>
-         <li> <a  class="p" href="#resume"> Resume </a></li>
-         <li style="float:right"> <a class="p" href="#contact"> Contact </a></li>
-         <script>
-             // Add active class to the current button (highlight it)
-             var header = document.getElementById("Menu");
-             var btns = header.getElementsByClassName("p");
-             for (var i = 0; i < btns.length; i++) {
-                 btns[i].addEventListener("click", function() {
-                     var current = document.getElementsByClassName("active");
-              if (current.length > 0) { 
-                current[0].className = current[0].className.replace(" active", "");
-              }
-              this.className += " active";
-              });
-            }
-        </script>
-    </ul>
-</div>  
+ 
+    <div class="navbar">
+        <ul class="left">
+            <li><a class="p" href="#index">Home</a></li>
+            <li><a class="p" href="#projects">Projects</a></li>
+            <li><a class="p" href="#resume">Resume</a></li>
+        </ul>
+        <ul class="center">
+            <li><a class="p" href="#index">Hector Monforte</a></li>
+        </ul>
+        <ul class="right">
+            <li><a class="p" href="#contact">Contact</a></li>
+        </ul>
+       
+        <script>
+            var header = document.getElementById("Menu");
+            var btns = header.getElementsByClassName("p");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+             if (current.length > 0) { 
+               current[0].className = current[0].className.replace(" active", "");
+             }
+             this.className += " active";
+             });
+           }
+       </script>
+    </div>
+        
+
 
     <!-- HOME PAGE -->
 
-    <section class="welcome">      
-        Welcome
+    <section class="welcome">  
+        About  
         <h3>
             <span>I am a 4th year student at the University</span>of Florida majoring in Computer Science.         
         </h3>
@@ -141,9 +146,13 @@
             </article>
         </a>
     </div>
-    <div>
-        <button href="https://github.com/LeakyMon">View More</button>
-    </div>
+    <br><br>
+    <a class="viewmore"href="https://github.com/LeakyMon">
+        <article class="text">
+            <h2>View More</h2>
+        </article>
+    </a>
+   
     </section>
 
  <!-- ----- RESUME ----- -->
